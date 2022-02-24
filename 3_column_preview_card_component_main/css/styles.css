@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@702&family=Lexend+Deca&display=swap');
+/* 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+    max-width: 960px;
+    height: 100px;
+}
+
+
+.sedan_card {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv_card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury_card {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+/*****Desktop*****/
+@media (min-width: 375px) {
+    .col-desktop-4 {
+        float: left;
+        width: 33%;
+    }
+    
+    .sedan_card {
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .luxury_card {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+/*****Mobile*****/
+@media (max-width: 375px) {
+    .col-mobile-12 {
+        float: left;
+        width: 100%;
+    }
+    
+    .sedan_card {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .luxury_card {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
