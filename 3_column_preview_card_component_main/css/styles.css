@@ -12,61 +12,96 @@ body {
     color: hsla(0, 0%, 100%, 0.75);
 }
 
-.row {
-    width: 100%;
-    margin: 0 auto;
-    padding: 5%;
-    max-width: 960px;
-    height: 100px;
+p {
+    padding: 25px 0;
 }
 
+.card-name {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 300%;
+}
 
-.sedan_card {
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex-item-left {
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px;
+    flex: 33%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.flex-item-middle {
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px;
+    flex: 33%;
+}
+
+.flex-item-right {
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px;
+    flex: 33%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.learn-more {
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 5% 10%;
+}
+
+.left-learn-more {
+    color: hsl(31, 77%, 52%);
+}
+
+.learn-more:hover {
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.left-learn-more:hover {
     background-color: hsl(31, 77%, 52%);
 }
 
-.suv_card {
+.middle-learn-more {
+    color: hsl(184, 100%, 22%);
+}
+
+.middle-learn-more:hover {
     background-color: hsl(184, 100%, 22%);
 }
 
-.luxury_card {
-    background-color: hsl(179, 100%, 13%);
+.right-learn-more {
+    color: hsl(179, 100%, 13%);
 }
 
+.right-learn-more:hover {
+    background-color: hsl(179, 100%, 13%);
 
-
-/*****Desktop*****/
-@media (min-width: 375px) {
-    .col-desktop-4 {
-        float: left;
-        width: 33%;
-    }
-    
-    .sedan_card {
-        border-bottom-left-radius: 15px;
-        border-top-left-radius: 15px;
-    }
-
-    .luxury_card {
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
 }
 
 /*****Mobile*****/
 @media (max-width: 375px) {
-    .col-mobile-12 {
-        float: left;
-        width: 100%;
-    }
-    
-    .sedan_card {
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
+    .flex-container {
+        flex-direction: column;
     }
 
-    .luxury_card {
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+    .flex-item-left {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .flex-item-right {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
     }
 }
