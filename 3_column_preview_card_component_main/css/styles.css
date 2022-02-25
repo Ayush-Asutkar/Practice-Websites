@@ -32,7 +32,7 @@ p {
     flex-direction: row;
     padding: 50px;
     max-width: 960px;
-    margin: 200px auto;
+    margin: 180px auto;
 }
 
 .flex-item-left, .flex-item-middle, .flex-item-right {
